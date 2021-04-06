@@ -45,14 +45,6 @@ exports.postSignup = (req, res, next) => {
             return user.save();
         })
         .then( result => {
-            // if(err){
-            //     console.log(result)
-            //     console.log(err)
-            //     return res.status(500).json({
-            //         success: false,
-            //         message: "Something went wrong while saving"
-            //     })
-            // }
             if(result){
                 console.log("User has been registered!");
                 res.status(201).json({
@@ -131,14 +123,6 @@ exports.getUserDetails = (req, res, next) => {
 
             res.status(200).json({
                 success: true,
-                // name: req.user.name,
-                // email: req.user.email,
-                // phone: req.user.phone,
-                // address1: req.user.address1,
-                // address2: req.user.address2,
-                // city: req.user.city,
-                // state: req.user.state,
-                // pin: req.user.pin,
                 userDetails: [
                     {name: req.user.name,
                     email: req.user.email,

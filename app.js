@@ -28,23 +28,6 @@ app.use('/user', authRoutes);
 
 if(process.env.NODE_ENV === 'test'){
   console.log('Testing Mode');
-  // const Mockgoose = require('mockgoose').Mockgoose;
-  // const mockgoose = new Mockgoose(mongoose)
-
-  // mockgoose.prepareStorage()
-  //   .then(() => {
-  //     mongoose.connect(MongoDB_URI,
-  //       { useUnifiedTopology: true, useNewUrlParser: true }
-  //     )
-  //     .then(result => {
-  //       console.log("Database has been connected successfully!")
-        
-  //     })
-  //     .catch(err => {
-  //       console.log("Could not connect to the Database!")
-  //       console.log(err)
-  //   })
-  //   })
 }
 else{
 
