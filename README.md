@@ -39,3 +39,12 @@ Server is listening!
 Database has been connected successfully!
 ```
 ### This means our backend server has been setup!
+
+## Unit Test
+
+Close the developement server by pressing `ctrl + C` twice.
+Now run the following command to run unit test :-
+
+```bash
+npm test
+```
