@@ -38,4 +38,4 @@ npm run start
 Server is listening!
 Database has been connected successfully!
 ```
-### This means our backend server has been setup
+### This means our backend server has been setup!
